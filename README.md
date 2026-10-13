@@ -1,47 +1,50 @@
-# Introdução ao JavaScript e Estruturas de Controle 🚀
-### Entregável da Semana 03 - Desafio Sprint 3
+# Entregável de Desenvolvimento Web – Introdução ao JavaScript – Semana 03
 
-Este projeto consiste em um script prático desenvolvido em **JavaScript (ES6+)** para consolidar os fundamentos da linguagem, o funcionamento de escopos, manipulação de funções e controle de fluxo com estruturas condicionais e de repetição.
+## 📋 Sobre o Projeto
+Este projeto apresenta a resolução dos desafios práticos propostos na aula de Introdução ao JavaScript (U3), cobrindo três blocos fundamentais de aprendizado: Variáveis e Tipos, Funções e Controle de Fluxo. 
 
----
-
-## 📋 Conteúdo e Conceitos Práticos Aplicados
-
-### Bloco 1: Fundamentos e Variáveis
-* **Uso de `let` e `const`:** Demonstração prática do escopo de bloco e a característica de reatribuição do `let`. Inclui um bloco `try/catch` para evidenciar a imutabilidade e a proteção de dados de referências criadas com `const`.
-* **Tipos Primitivos:** Verificação dinâmica de tipos em tempo de execução através do operador `typeof` (`string`, `number`, `boolean`, `undefined` e `null`).
-* **Template Literals:** Substituição da concatenação tradicional baseada no operador `+` por interpolação de strings utilizando crases (backticks), melhorando a legibilidade e a manutenção do código.
-
-### Bloco 2: Funções e Hoisting
-* **Hoisting (Içamento):** Análise comparativa entre **Funções Declaradas** (que sofrem hoisting e podem ser invocadas antes da linha de sua declaração) e **Expressões de Função** (que não sofrem hoisting e lançam um erro caso sejam chamadas precocemente).
-* **Arrow Functions:** Aplicação da sintaxe moderna e enxuta do ES6 para retorno implícito de valores.
-* **Parâmetros Padrão (*Default Parameters*):** Implementação de valores de fallback para funções caso nenhum argumento seja fornecido pelo usuário.
-
-### Bloco 3: Controle de Fluxo e Estruturas de Repetição
-* **Condicionais (`if/else` e `switch`):** Algoritmos de tomada de decisão baseados em notas acadêmicas e um sistema de simulação de cores de semáforo com tratamento de valores inválidos (`default`).
-* **Laço `for` Clássico:** Geração automatizada da tabuada do número 5.
-* **Laço `while`:** Implementação de contagem regressiva com decremento rigoroso para evitar loops infinitos.
-* **Avaliação de Paridade:** Loop de 1 a 20 que utiliza o operador de módulo (`%`) associado a um operador ternário para classificar os números entre pares e ímpares.
+Os códigos foram desenvolvidos utilizando as práticas modernas do **ES6+** e estruturados em um arquivo único chamado `app.js` para execução via Node.js ou console do navegador.
 
 ---
 
-## 🚀 Como Executar o Script
+## 💻 Conteúdo do Projeto (`app.js`)
 
-Para rodar o arquivo e ver os resultados das validações direto no seu terminal, siga o passo a passo:
+### Bloco 1 – Fundamentos e Variáveis
+* **Declaração de Variável `let`:** Criação da variável `pontos` com valor inicial, adição de 10 unidades e exibição no console.
+* **Uso de `const`:** Declaração da constante `MAX_PONTOS` com tentativa de reatribuição protegida por `try/catch`, acompanhada da explicação do erro gerado.
+* **Tipos Primitivos:** Inicialização e checagem de tipos usando o operador `typeof` para os tipos `string`, `number`, `boolean`, `undefined` e `null`.
+* **Template Literals vs Concatenação:** Construção e comparação da mesma frase utilizando a sintaxe moderna de crases `` `O aluno \${...}` `` e a concatenação tradicional com o operador `+`.
 
-1. Certifique-se de ter o **Node.js** instalado na sua máquina.
-2. Abra a pasta do projeto no terminal.
-3. Execute o comando abaixo:
+### Bloco 2 – Funções
+* **Hoisting (Içamento):** Implementação da função `ehMaiorDeIdade` no formato de função declarada, demonstrando que ela pode ser chamada antes de sua definição no código.
+* **Expressão de Função:** Criação da mesma lógica na constante `ehMaiorDeIdadeExpressao`, evidenciando o erro de `ReferenceError` ao tentar invocá-la antes da declaração.
+* **Variações da Função Dobro:** Escrita da função em três sintaxes diferentes: declarada, expressão de função e *arrow function* simplificada.
+* **Parâmetro Padrão:** Variação da função com parâmetro *default* (`n = 1`) testada com e sem a passagem de argumentos.
+
+### Bloco 3 – Controle de Fluxo
+* **Estrutura `if/else`:** Função `classificarNota(nota)` que retorna "Aprovado" para valores maiores ou iguais a 6 e "Reprovado" caso contrário.
+* **Estrutura `switch`:** Validação da variável `corSemaforo` para exibir os comandos "Pare", "Atenção" ou "Siga".
+* **Laço `for` Clássico:** Impressão completa da tabuada do número 5 (de 1 a 10).
+* **Laço `while`:** Execução de uma contagem regressiva de 5 até 1 com condição de parada explícita.
+* **Estruturas de Repetição Combinadas:** Varredura dos números de 1 a 20 indicando se cada um é "par" ou "ímpar" utilizando o operador de módulo (`% 2 === 0`), implementado tanto em um laço `for` quanto em um laço `while`.
+* **Função com Tratamento `default`:** Função `diaDaSemana(numero)` utilizando `switch` para converter números de 1 a 7 nos dias correspondentes, tratando valores fora do intervalo.
+
+---
+
+## 🚀 Como Executar o Projeto
+
+1. Certifique-se de possuir o **Node.js** instalado em seu computador.
+2. Abra a pasta onde o arquivo `app.js` está localizado utilizando o terminal ou o VS Code.
+3. Digite o seguinte comando para rodar o script:
 
 ```bash
 node app.js
 ```
 
-*(O script também pode ser executado colando o código diretamente no Console de Desenvolvedor do seu navegador web).*
+*(Alternativamente, todo o código do arquivo `app.js` pode ser copiado e colado diretamente no Console de Desenvolvedor do seu navegador de internet).*
 
 ---
 
 ## ✍️ Autoria
-
-Projeto acadêmico individual desenvolvido para a disciplina de **Desenvolvimento Web / Introdução ao JavaScript**.  
-Universidade CEUMA.
+Atividade acadêmica desenvolvida para a disciplina de **Desenvolvimento Web** (Semana 03).  
+**Universidade CEUMA.**
